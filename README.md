@@ -21,21 +21,10 @@ This challenge is my commitment to becoming a stronger, faster, and more thought
 
 ---
 
-## 🧠 Key Skills Practiced
-
-- Logical thinking & async operations
-- State management & conditionals
-- Clean UI building with Tailwind CSS
-- Component-based architecture
-- Real-life UX patterns (cancel, preview, feedback, etc.)
-- Planning, executing, and documenting code
-
----
 Each folder contains:
 - Full source code
 - A README with goals & what was learned
 - Screenshots or previews (where relevant)
-
 ---
 
 ## 📌 Project Highlights
