@@ -107,7 +107,7 @@ transition: Slide,
       }}
     ></div>
       <IoCloseSharp size={24} className="text-white" />
-      Cancel Sending
+      Undo Send
     </button>}
     </div>
   )
