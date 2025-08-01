@@ -1,69 +1,55 @@
-# React + TypeScript + Vite
+# Day 1 — DM Delay Button ⏱️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple messaging interface with a delay timer before sending. This gives users the option to cancel a message before it's sent — simulating an "Undo Send" feature found in modern messaging apps.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features
 
-## Expanding the ESLint configuration
+- **Message Timer**: Delay messages by a set number of seconds before sending.
+- **Cancel Option**: Cancel the message before the timer completes.
+- **Live Preview**: (Optional) See the message before it's sent.
+- **Dynamic Delay**: Choose from preset delays (10s, 30s, 60s).
+- **Notification**: Toast message confirms when a message is successfully sent.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🧠 Concepts & Skills Demonstrated
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Timer-based logic using `setTimeout` and `clearTimeout`
+- State management for message, delay time, and timer references
+- Conditional UI rendering for "Send" vs "Cancel"
+- Input handling and form validation
+- User feedback with toast notifications
+- Component-based structure for scalability and clarity
+- Clean and modern UI implementation with utility-first CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── components/
+│ └── MessageInput.tsx
+├── pages/
+│ └── Home.tsx
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 How to Run
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
+
+##💡 What I Learned
+- How to implement delay logic that simulates real-world messaging platforms.
+- Handling timers efficiently and cleaning them up to prevent memory leaks.
+- Enhancing user experience with cancelable actions and immediate feedback.
+- Organizing code into reusable and clean components.
+
+## 📸 Preview
+| 
