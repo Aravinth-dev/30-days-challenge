@@ -10,7 +10,7 @@ import { toast,Slide } from 'react-toastify';
 
 const MessageFrom = () => {
   const [message,setMessage] = useState<String>("")
-  const [delay,setDelay] = useState<Number>(0)
+  const [delay, setDelay] = useState<number | string>("");
   const [sendMessage,setSendMessage] = useState<String>("")
   const [isSending,setIsSending] = useState<boolean>(false)
 const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
@@ -26,7 +26,7 @@ const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
     setIsSending(false);
     setSendMessage(message);
     setMessage("");
-    setDelay(0)
+    setDelay("")
     console.log(sendMessage)
     toast.success(`Message Send : ${message}`,{
       position: "bottom-right",
@@ -50,7 +50,7 @@ const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
     setIsSending(false)
     setSendMessage("")
     setMessage("")
-    setDelay(0)
+    setDelay("")
 
     toast.error(`Message sending cancelled`,{
       position: "bottom-right",
@@ -90,8 +90,8 @@ transition: Slide,
         placeholder='Enter the delay'
         className='mt-2 border-2 border-gray-700 py-5'
         disabled={isSending}
-       value={Number(delay)}
-       onChange={(e) => setDelay(Number(e.target.value))}/>
+       value={delay}
+       onChange={(e) => setDelay(e.target.value)}/>
       </div>
       {!isSending ? (
         <Button className={`w-full py-6 text-xl mt-2 text-white font-semibold rounded  ${message.length===0 ? "cursor-not-allowed opacity-40":"cursor-pointer"}
