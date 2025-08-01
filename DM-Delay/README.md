@@ -4,6 +4,11 @@ A simple messaging interface with a delay timer before sending. This gives users
 
 ---
 
+## 📸 Preview
+| 
+
+---
+
 ## 🔍 Features
 
 - **Message Timer**: Delay messages by a set number of seconds before sending.
@@ -24,6 +29,15 @@ A simple messaging interface with a delay timer before sending. This gives users
 - Component-based structure for scalability and clarity
 - Clean and modern UI implementation with utility-first CSS
 
+---
+
+## 🧠 Tech Stack Covered:
+✅ React + Vite (TypeScript)
+✅ Tailwind CSS
+✅ ShadCN UI Components
+✅ react toastify
+
+ 
 ---
 
 ## 📂 Project Structure
@@ -51,5 +65,14 @@ npm run dev
 - Enhancing user experience with cancelable actions and immediate feedback.
 - Organizing code into reusable and clean components.
 
-## 📸 Preview
-| 
+
+
+## 🙌 Let's Connect
+
+If you liked this project or have feedback, feel free to connect with me:
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/aravinth-dev/)
+
+---
+
+## © 2025 | Built with focus, logic, and continuous learning.
