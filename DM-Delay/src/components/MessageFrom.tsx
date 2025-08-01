@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,useRef,useEffect} from 'react'
 import { MdOutlineTimer } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
 import { Textarea } from './ui/textarea';
@@ -9,13 +9,17 @@ import { toast,Slide } from 'react-toastify';
 
 
 const MessageFrom = () => {
+  const inputRef = useRef(null);
   const [message,setMessage] = useState<String>("")
   const [delay, setDelay] = useState<number | string>("");
   const [sendMessage,setSendMessage] = useState<String>("")
   const [isSending,setIsSending] = useState<boolean>(false)
 const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
-
  const delayMs = Number(delay) * 1000;
+
+ useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   const handleSend = () => {
   if (!message) return;
@@ -29,7 +33,7 @@ const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
     setDelay("")
     console.log(sendMessage)
     toast.success(`Message Send : ${message}`,{
-      position: "bottom-right",
+      position: "top-center",
       autoClose: 2000,  
       hideProgressBar: true,
       closeOnClick: false,
@@ -53,7 +57,7 @@ const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
     setDelay("")
 
     toast.error(`Message sending cancelled`,{
-      position: "bottom-right",
+     position: "top-center",
 autoClose: 5000,
 hideProgressBar: true,
 closeOnClick: false,
@@ -77,6 +81,7 @@ transition: Slide,
       <div className='mb-4'>
         <Label htmlFor="message" className='text-lg font-semibold '>Your Message</Label>
         <Textarea
+          ref={inputRef}
           id='message'
           placeholder='Type your Message here...'
           value={String(message)}
