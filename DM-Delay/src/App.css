@@ -1,0 +1,30 @@
+
+body{
+    background: #020204;
+background: -webkit-linear-gradient(129deg, rgba(2, 2, 4, 1) 0%, rgba(31, 29, 29, 1) 100%);
+background: -moz-linear-gradient(129deg, rgba(2, 2, 4, 1) 0%, rgba(31, 29, 29, 1) 100%);
+background: linear-gradient(129deg, rgba(2, 2, 4, 1) 0%, rgba(31, 29, 29, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020204", endColorstr="#1F1D1D", GradientType=0);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* For Firefox */
+  -webkit-appearance: none;  /* For Chrome, Safari, Edge */
+  appearance: none;          /* Standard */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
