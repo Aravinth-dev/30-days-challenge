@@ -100,7 +100,7 @@ transition: Slide,
   transition-all duration-300`} onClick={handleSend}>
   Send Message
 </Button>
-      ): <button className="w-full relative flex  justify-center font-semibold text-xl items-center gap-2 bg-red-600 hover:bg-red-800 text-white px-3 py-2.5 rounded transition-all" onClick={handleClose}>
+      ): <button className="w-full relative flex  justify-center font-semibold text-xl items-center gap-2 bg-red-600 hover:bg-red-800 text-white px-3 py-2.5 rounded transition-all cursor-pointer" onClick={handleClose}>
           <div className="absolute left-0 top-0 h-full bg-red-900 opacity-60 transition-all"
       style={{
         width: '100%',
