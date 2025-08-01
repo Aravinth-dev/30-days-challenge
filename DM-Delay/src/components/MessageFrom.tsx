@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import { MdOutlineTimer } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io5";
 import { Textarea } from './ui/textarea';
@@ -13,9 +13,9 @@ const MessageFrom = () => {
   const [delay,setDelay] = useState<Number>(0)
   const [sendMessage,setSendMessage] = useState<String>("")
   const [isSending,setIsSending] = useState<boolean>(false)
-  const [timerId, setTimerId] = useState<ReturnType<typeof setTimeout> | null>(null);
+const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
 
- 
+ const delayMs = Number(delay) * 1000;
 
   const handleSend = () => {
   if (!message) return;
@@ -27,6 +27,7 @@ const MessageFrom = () => {
     setSendMessage(message);
     setMessage("");
     setDelay(0)
+    console.log(sendMessage)
     toast.success(`Message Send : ${message}`,{
       position: "bottom-right",
       autoClose: 2000,  
@@ -38,7 +39,7 @@ const MessageFrom = () => {
       theme: "dark",
       transition: Slide,
     })  
-  }, delay * 1000);
+  },delayMs);
   setTimerId(id); 
 };
 
