@@ -5,9 +5,10 @@ A simple messaging interface with a delay timer before sending. This gives users
 ---
 
 ## 📸 Preview
-> ![DM Delay Screenshot](./public/Screenshot%20(50).png) 
-
+> ![DM Delay Screenshot](./public/Screenshot%20(50).png)
+>🔗 Live Demo: https://dmdelay.netlify.app
 ---
+
 
 ## 🔍 Features
 
