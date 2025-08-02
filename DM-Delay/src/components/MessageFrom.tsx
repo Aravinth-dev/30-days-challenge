@@ -120,7 +120,8 @@ transition: Slide,
         <Button className={`w-full py-6 text-xl mt-2 text-white font-semibold rounded  ${message.length===0 ? "cursor-not-allowed opacity-40":"cursor-pointer"}
   bg-gradient-to-r from-[#6427C9] to-[#E589E8] 
   hover:brightness-110
-  transition-all duration-300`} onClick={handleSend}>
+  transition-all duration-300`} onClick={handleSend}
+  disabled={message.length===0}>
   Send Message
 </Button>
       ): <button className="w-full relative flex  justify-center font-semibold text-xl items-center gap-2 bg-red-600 hover:bg-red-800 text-white px-3 py-2.5 rounded transition-all cursor-pointer"  onClick={handleClose} >
