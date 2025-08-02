@@ -32,7 +32,7 @@ Each folder contains:
 | Day | Project Title              | Key Concept                  |
 |-----|----------------------------|------------------------------|
 | 01  | DM Delay Button            | `setTimeout`, `clearTimeout` |
-|     |                            |
+| 02  | Feel Note                  |  `useState`,`props handling` |
 
 *Full list in progress as I build each day!*
 

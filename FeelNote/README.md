@@ -22,7 +22,6 @@ FeelNote is a React-based app that lets users generate creative email subject li
 ## 🧠 Concepts & Skills Demonstrated
 
 - React Hooks (`useState`)
-- Conditional rendering based on user input
 - Custom components and props handling
 - Responsive layout with Tailwind CSS
 - Emoji and text content logic based on mood types
