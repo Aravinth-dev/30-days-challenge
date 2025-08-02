@@ -36,7 +36,7 @@ A toast notification confirms when the message is successfully sent after the de
 - Clean and modern UI implementation with utility-first CSS
 ---
 
-## 🧠 Tech Stack Covered:
+## 📦 Tech Stack:
 ✅ React + Vite (TypeScript)
 ✅ Tailwind CSS
 ✅ ShadCN UI Components
