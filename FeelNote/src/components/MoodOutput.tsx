@@ -1,11 +1,12 @@
 import { useState } from "react";
 import {Button} from "@/components/ui/button"
 
-type Props = {
-    subject:string,
-    footer:string,
-    quote:string,
-    handleReset:() => void,
+interface Props{
+    subject: string;
+  footer: string;
+  quote: string;
+  generate: boolean;
+  handleReset: () => void;
 }
 
 const MoodOutput = ({subject,footer,quote,handleReset}:Props) => {
