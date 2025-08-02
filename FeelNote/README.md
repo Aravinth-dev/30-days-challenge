@@ -4,6 +4,11 @@ FeelNote is a React-based app that lets users generate creative email subject li
 
 ---
 
+## 📸 Preview
+> ![Feel Note Screenshot](./public/Screenshot%20(56).png)
+>🔗 Live Demo: https://feelnote.netlify.app/
+---
+
 ## 🔍 Features
 
 - 🎭 Select your mood (e.g., Happy, Sad, Excited)
