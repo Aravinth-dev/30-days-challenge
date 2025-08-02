@@ -248,7 +248,7 @@ const handleGenerate = () => {
     <div className="w-full h-auto flex justify-center font-sans pt-20">
         <div className="w-[80%] p-4">
 <h1 className="text-center text-4xl md:text-5xl font-extrabold font-sans bg-gradient-to-r from-[#3313e5] via-[#b875e8] to-[#4225e6] bg-clip-text text-transparent animate-gradient-x">
-  MoodMail
+  FeelNote
 </h1>
             <p className="text-center mt-2 text-gray-600">Let your mood Shape your Message</p>
             {!generate ? (
