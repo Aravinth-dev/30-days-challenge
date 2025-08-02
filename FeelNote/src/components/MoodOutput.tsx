@@ -5,7 +5,7 @@ type Props = {
     subject:string,
     footer:string,
     quote:string,
-    handleReset:void,
+    handleReset:() => void,
 }
 
 const MoodOutput = ({subject,footer,quote,handleReset}:Props) => {
@@ -13,7 +13,7 @@ const MoodOutput = ({subject,footer,quote,handleReset}:Props) => {
     const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' });
     const [toolTipText,setToolTipText] = useState("copy")
 
-    function copyToClipboard(text) {
+    function copyToClipboard(text:string) {
   navigator.clipboard.writeText(text).then(() => {
     setToolTipText("Copied...");
 setTimeout(() => {

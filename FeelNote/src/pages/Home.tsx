@@ -189,13 +189,6 @@ const Home = () => {
     const [isLoading,setIsloading] = useState(false)
    const [generate, setGenerate] = useState(false)
 
- const handleKey = (event: KeyboardEvent) => {
-        if (event.key === 'Enter') {
-            handleGenerate()
-            console.log("handle")
-            }
-    }
-
 
 const handleGenerate = () => {
   const moodKeywords = {
@@ -237,7 +230,7 @@ const handleGenerate = () => {
     setIsloading(false);
   }, 3000);
 };
-    const handleReset = ()=>{
+    const handleReset = (event: React.MouseEvent<HTMLButtonElement>)=>{
         setGenerate(false)
         setSubject("")
         setFooter("")
@@ -256,7 +249,6 @@ const handleGenerate = () => {
             mood={mood}
             setMood={setMood}
             handleGenerate = {handleGenerate}
-            handleKey = {handleKey}
             isLoading = {isLoading}
             generate={generate}/>
             ) : (<MoodOutput 
