@@ -216,7 +216,7 @@ const handleGenerate = () => {
 
   if (!moodType) moodType = 'default';
 
-  const quotes = quotesDB[moodType];
+  const quotes = quotesDB[moodType as keyof typeof quotesDB];
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
   setIsloading(true);
@@ -230,7 +230,7 @@ const handleGenerate = () => {
     setIsloading(false);
   }, 3000);
 };
-    const handleReset = (event: React.MouseEvent<HTMLButtonElement>)=>{
+    const handleReset = ()=>{
         setGenerate(false)
         setSubject("")
         setFooter("")
