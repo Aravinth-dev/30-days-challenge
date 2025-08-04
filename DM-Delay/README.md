@@ -44,23 +44,6 @@ A toast notification confirms when the message is successfully sent after the de
 
 ---
 
-## 📂 Project Structure
-
-```
-src/
-├── components/
-│ └── ui/
-│ |    └── buttons.tsx
-│ |    └── input.tsx
-│ |    └── label.tsx
-│ |    └── textarea.tsx
-│ └── MessageInput.tsx
-├── pages/
-│ └── Home.tsx
-├── App.tsx
-└── main.tsx
-```
-
 ## 🚀 How to Run
 
 ```bash

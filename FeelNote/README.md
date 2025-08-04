@@ -39,27 +39,6 @@ FeelNote is a React-based app that lets users generate creative email subject li
 
 ---
 
-## 📂 Project Structure
-
-```
-FeelNote/
-├── public/
-│ └── assets/
-├── src/
-│ ├── components/
-│ │ └── ResultCard.tsx
-│ ├── pages/
-│ │ └── Home.tsx
-│ ├── App.tsx
-│ └── main.tsx
-├── .nvmrc
-├── tsconfig.json
-├── tailwind.config.js
-├── vite.config.ts
-└── README.md
-```
-
-
 ## 🚀 How to Run
 
 ```bash
