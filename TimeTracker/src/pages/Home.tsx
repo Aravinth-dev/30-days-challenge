@@ -3,7 +3,6 @@ import ActivityList from "@/components/ActivityList";
 import DailyProgress from "@/components/DailyProgress";
 import NewActivity from "@/components/NewActivity";
 import { useState } from "react";
-
 import { FaClock } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { FaArrowTrendUp } from "react-icons/fa6";

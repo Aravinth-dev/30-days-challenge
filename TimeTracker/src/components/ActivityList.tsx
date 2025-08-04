@@ -19,7 +19,7 @@ const handleDelete = (index: number) => {
   localStorage.setItem('data', JSON.stringify(updatedData));
 };
 
-const  handleEdit = (index) => {
+const  handleEdit = (index:number) => {
     const activity = data[index].activity;
     const hours = data[index].hours;
     const color = data[index].color;
