@@ -33,6 +33,8 @@ Each folder contains:
 |-----|----------------------------|------------------------------|
 | 01  | DM Delay Button            | `setTimeout`, `clearTimeout` |
 | 02  | Feel Note                  |  `useState`,`props handling` |
+| 03  | TimeFlow                   |  `Chart.js`,  `localStorage` |
+| 04  |  Notoon                    |  `Firebase Firestore`,  `Real-time data synchronization` |
 
 *Full list in progress as I build each day!*
 
