@@ -57,7 +57,8 @@ const NoteList = () => {
       setFilter = {setFilter}
       />
       <List
-      note={note.filter((item) => filter === 'all' ? true : item.category === filter ).filter((item) =>!search ? true : item.title.toLowerCase().includes(search.toLowerCase()) || item.description.toLowerCase().includes(search.toLowerCase()))}
+      note={note.filter((item) =>filter === 'all' ? true : item.category === filter).filter((item) =>!search? true: item.title.toLowerCase().includes(search.toLowerCase()) ||item.description.toLowerCase().includes(search.toLowerCase())).sort((a, b) => (b.star === true ? 1 : 0) - (a.star === true ? 1 : 0))
+}
       handleDelete={handleDelete}
       handleStar={handleStar}
       handleEdit={handleEdit}

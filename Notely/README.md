@@ -1,69 +1,96 @@
-# React + TypeScript + Vite
+# 📝 Notoon  
+**Not just notes. Your creative space.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Notoon is a minimal yet powerful note-taking app that syncs your thoughts in real-time using Firebase. Built with a modern UI using React, Tailwind CSS, and ShadCN, it's designed for simplicity, speed, and a seamless creative experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 📸 Preview
+> ![Feel Note Screenshot](./public/Screenshot%202025-08-06%20004442.png)
+>🔗 Live Demo: https://notoon.netlify.app/
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔍 Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 📄 Create, view, and delete notes
+- 🔄 Real-time syncing with Firebase Firestore
+- 🎨 Modern responsive UI using Tailwind CSS + ShadCN
+- 🕒 Displays created timestamps for each note
+- 🏷️ Tag notes for easy categorization
+- 🌙 Light & dark mode support
+- 📱 Fully responsive design (mobile-friendly)
+- 🧩 Smooth UI interactions and modal-based note editing
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧠 Concepts & Skills Demonstrated
+
+- React component architecture with TypeScript
+- Firebase Firestore integration (addDoc, deleteDoc, onSnapshot)
+- Real-time data synchronization
+- Tailwind CSS utility-first styling
+- Modal handling and UI state management
+- Clean project structure with `lib/firebase.ts`
+- Accessibility and responsive design
+- UI design with ShadCN components
+
+---
+
+## 📦 Tech Stack:
+
+- ⚛️ React + Vite (TypeScript)
+- 🎨 Tailwind CSS
+- 🧩 ShadCN UI
+- 🔥 Firebase (Firestore)
+- 🧠 Headless UI for modals
+- 🌐 Responsive design best practices
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/notoon.git
+cd notoon
+```
+2. **Install dependencies**
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Set up Firebase**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Create a Firebase project at Firebase Console
+- Enable Firestore Database
+- Replace Firebase config in lib/firebase.ts with your project credentials
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+4. **Start the dev server**
+
+```bash
+npm run dev
 ```
+
+## 💡 What I Learned
+- How to integrate Firebase Firestore for real-time applications
+- Add, display, and delete notes from Firestore
+- Real-time syncing using onSnapshot
+- Firestore addDoc, collection, and deleteDoc
+- Best practices for designing clean and responsive UI with Tailwind CSS
+- Using ShadCN for accessible, beautiful components
+- Structuring scalable React projects
+
+
+## 🙌 Let's Connect
+
+If you liked this project or have feedback, feel free to connect with me:
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/aravinth-dev/)
+
+---
+
+## © 2025 | Built with focus, logic, and continuous learning.
+
