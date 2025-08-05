@@ -7,7 +7,7 @@ Notoon is a minimal yet powerful note-taking app that syncs your thoughts in rea
 
 
 ## 📸 Preview
-> ![Feel Note Screenshot](./public/Screenshot%202025-08-06%20004442.png)
+> ![Feel Note Screenshot](./public/Screenshot%202025-08-06%20005341.png)
 >🔗 Live Demo: https://notoon.netlify.app/
 ---
 
@@ -16,9 +16,7 @@ Notoon is a minimal yet powerful note-taking app that syncs your thoughts in rea
 - 📄 Create, view, and delete notes
 - 🔄 Real-time syncing with Firebase Firestore
 - 🎨 Modern responsive UI using Tailwind CSS + ShadCN
-- 🕒 Displays created timestamps for each note
 - 🏷️ Tag notes for easy categorization
-- 🌙 Light & dark mode support
 - 📱 Fully responsive design (mobile-friendly)
 - 🧩 Smooth UI interactions and modal-based note editing
 
@@ -43,7 +41,6 @@ Notoon is a minimal yet powerful note-taking app that syncs your thoughts in rea
 - 🎨 Tailwind CSS
 - 🧩 ShadCN UI
 - 🔥 Firebase (Firestore)
-- 🧠 Headless UI for modals
 - 🌐 Responsive design best practices
 
 ---
@@ -53,7 +50,7 @@ Notoon is a minimal yet powerful note-taking app that syncs your thoughts in rea
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/notoon.git
+git clone https://github.com/Aravinth-dev/30-days-challenge.git
 cd notoon
 ```
 2. **Install dependencies**
