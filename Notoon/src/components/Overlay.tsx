@@ -3,7 +3,7 @@ import { Textarea } from "@/components/ui/textarea";
 import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue,} from "@/components/ui/select"
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
+import { useState,useRef,useEffect } from "react";
 import db from "@/lib/firebase"
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
@@ -12,11 +12,16 @@ interface Props{
 }
 
 const Overlay = ({setOverlay}:Props) => {
+  const inputRef = useRef<HTMLInputElement>(null)
     const MAX_LENGTH = 200;
     const [title,setTitle] = useState("")
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("personal");
     const [loading,setLoading] = useState(false)
+
+     useEffect(() => {
+    inputRef.current?.focus(); 
+  }, []);
 
     const handleSubmit = async() => {
         setLoading(true)
@@ -47,6 +52,7 @@ const Overlay = ({setOverlay}:Props) => {
           <label className="text-lg font-Poppins">Title</label>
           <Input
             type="text"
+            ref={inputRef}
             placeholder="Enter a compelling title..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}

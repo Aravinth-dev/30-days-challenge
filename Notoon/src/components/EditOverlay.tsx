@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useRef } from "react";
 import db from "@/lib/firebase";
 import { updateDoc,doc} from "firebase/firestore"
 
@@ -30,6 +30,7 @@ interface Props {
 const Overlay = ({ editNote, setEditNote, setEdit }: Props) => {
   const MAX_LENGTH = 200;
   const [loading, setLoading] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null)
 
   // Local form states
   const [title, setTitle] = useState('');
@@ -45,6 +46,9 @@ const Overlay = ({ editNote, setEditNote, setEdit }: Props) => {
     }
   }, [editNote]);
 
+  useEffect(() => {
+    inputRef?.current?.focus()
+  })
   const handleSubmit = async () => {
     if (!title || !description) return;
 
@@ -79,6 +83,7 @@ const Overlay = ({ editNote, setEditNote, setEdit }: Props) => {
           <label className="text-lg font-Poppins">Title</label>
           <Input
             type="text"
+            ref={inputRef}
             placeholder="Enter a compelling title..."
             value={title}
             onChange={(e) => setTitle(e.target.value)}
