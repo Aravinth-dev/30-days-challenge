@@ -2,6 +2,7 @@ import { PiStar } from "react-icons/pi";
 import { PiStarFill } from "react-icons/pi";
 import { FaRegEdit } from "react-icons/fa";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import nodata from "@/assets/12146015_Wavy_Gen-01_Single-10.jpg"
 
 
 
@@ -13,9 +14,14 @@ interface Props{
 }
 
 const List = ({note,handleDelete,handleStar,handleEdit}:Props) => {
+
+    if(note.length == 0)
+        return <div className="flex flex-col justify-center items-center min-h-120">
+            <img src={nodata} alt="" className="w-80"/>
+            No notes found. Create your first one!</div>;
   return (
     <div className='w-[90%] h-auto p-5 mx-auto my-10'>
-        <div className='grid grid-cols-3 gap-6'>
+        <div className='grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-6'>
             {note.map((item) => (
         <div key={item.id} className={`group p-4 pt-5 rounded-xl h-80 ${item.category == 'ideas' ? 'bg-amber-50' : item.category == 'work' ? 'bg-blue-50' :'bg-emerald-50' } hover:shadow-2xl transition-all duration-700`}>
             <div className="flex justify-end pr-3.5">
@@ -23,6 +29,7 @@ const List = ({note,handleDelete,handleStar,handleEdit}:Props) => {
                     <PiStarFill size={22} className='text-3xl text-yellow-500' />
                 )}
             </div>
+
             <p className={`${item.category == 'ideas' ? 'text-amber-600' : item.category == 'work' ? 'text-blue-600' :'text-emerald-600' } font-Poppins mb-3 mt-6`}>{item.category}</p>
             <h1 className='text-[20px] font-bold font-Poppins'>{item.title}</h1>
             <p className='text-sm mt-2 text-gray-600'>{item.description}</p>

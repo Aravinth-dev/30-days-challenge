@@ -24,7 +24,7 @@ const Overlay = ({setOverlay}:Props) => {
             title:title,
             description:description,
             category:category,
-            star:true,
+            star:false,
             timestamp:serverTimestamp()
             })
             setTitle('')

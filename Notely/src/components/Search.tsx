@@ -6,8 +6,8 @@ interface Props{
 
 const Search = ({search,setSearch}:Props) => {
   return (
-<div className="w-full h-30 flex justify-center items-center">
-  <label className="input flex items-center w-[35rem] h-12 px-5 rounded-3xl shadow-md border focus-within:ring-none focus-within:border-none ">
+<div className="w-full h-30 flex justify-center items-center ">
+  <label className="input flex items-center w-[35rem] h-12 px-5 rounded-3xl shadow-md border focus-within:ring-none focus-within:border-none max-md:w-[80%] ">
     <svg
       className="w-6 h-6 text-gray-500 mr-3"
       xmlns="http://www.w3.org/2000/svg"

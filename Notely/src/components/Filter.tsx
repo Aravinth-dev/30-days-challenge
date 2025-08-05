@@ -11,7 +11,7 @@ interface Props {
 
 const Filter = ({ filter, setFilter }: Props) => {
   return (
-    <div className="flex space-x-4 w-126 p-2 border-2 mx-auto rounded-xl shadow-lg shadow-gray-50">
+    <div className="flex space-x-4 w-126 p-2 border-2 mx-auto rounded-xl shadow-lg shadow-gray-50 max-md:flex-wrap max-md:w-[80%] max-md:gap-4 max-md:justify-center max-md:items-center">
       <button
         className={`text-base flex gap-3 py-2 px-5 bg-black rounded-xl items-center transition-all duration-300 cursor-pointer hover:shadow-2xl ${
           filter === 'all' ? 'shadow-xl shadow-gray-100 scale-102 bg-black text-white' : 'shadow-none bg-gray-100 text-black'
@@ -46,7 +46,7 @@ const Filter = ({ filter, setFilter }: Props) => {
         className={`text-lg flex gap-3 py-2 px-5 text-emerald-600 items-center rounded-xl transition-all duration-300 cursor-pointer hover:shadow-xl ${
           filter === 'projects' ? 'bg-emerald-600 shadow-xl shadow-gray-50 text-white' : 'bg-emerald-50 shadow-none'
         }`}
-        onClick={() => setFilter('projects')}
+        onClick={() => setFilter('personal')}
       >
         <GoPerson size={18} />
         Personal

@@ -18,8 +18,8 @@ const Header = ({overlay,setOverlay}:Props) => {
       <FaBookOpen size={30} />
     </div>
     <div>
-      <h2 className="text-3xl font-Poppins font-bold tracking-wider">Notoon</h2>
-      <p className="font-Poppins text-gray-400">Not just notes. Your creative space.</p>
+      <h2 className="text-3xl font-Poppins font-bold tracking-wider max-md:text-2xl">Notoon</h2>
+      <p className="font-Poppins text-gray-400 max-md:text-sm max-md:max-w-40">Not just notes. Your creative space.</p>
     </div>
   </div>
   <div>
