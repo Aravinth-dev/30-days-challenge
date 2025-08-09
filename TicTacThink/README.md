@@ -1,69 +1,79 @@
-# React + TypeScript + Vite
+# 🎮 Tic Tac Think
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tic Tac Think is a modern, interactive Tic Tac Toe game built with **React + Vite (TypeScript)**, styled with **Tailwind CSS**, and enhanced using **ShadCN UI** components.  
+Enjoy a clean, responsive interface with a smooth and minimal design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features  
+- 🎮 **Classic Gameplay** – Play on a 3x3 grid, just like the original.  
+- 🤖 **Smart AI Opponent** – Powered by the Minimax algorithm for unbeatable moves.  
+- 🖥 **Responsive UI** – Works on desktop, tablet, and mobile devices.  
+- 🎨 **Clean & Minimal Design** – Simple interface for an engaging experience.  
+- ⚡ **Instant Play** – No sign-ups, no installs, just play.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Concepts & Skills Demonstrated  
+- **Artificial Intelligence** – Implementing Minimax algorithm with alpha-beta pruning.  
+- **Game Logic Design** – Handling turns, win/draw detection, and reset logic.  
+- **React Fundamentals** –  Component-based UI development and event handling with JSX.
+- **Responsive Web Design** – Using CSS for cross-device compatibility.  
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧠 How the AI Works
+The game sends the current board state to the OpenRouter API,  
+and the AI responds with its chosen move.  
+We’ve set the AI temperature to a low value for consistent, logical play.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠 Tech Stack
+- **Frontend:** React (TypeScript) + Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** ShadCN UI
+- **State Management:** React Hooks
+- **AI API:** [OpenRouter](https://openrouter.ai/)
+- **Model:** `deepseek/deepseek-r1:free` (Free on OpenRouter)
+      -    `moonshotai/kimi-dev-72b:free` (Free on OpenRouter)
+      -    `z-ai/glm-4.5-air:free` (Free on OpenRouter)
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/tic-tac-think.git
+
+# Navigate into the project folder
+cd tic-tac-think
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 What I Learned
+- How to implement game logic for Tic Tac Toe in react js.
+- Creating an AI opponent using the Minimax algorithm for optimal moves.
+- Structuring clean, modular code for better maintainability.
+- Improving UI/UX for interactive browser-based games.
+- Handling state management for win/lose/draw scenarios.
+- Testing and debugging game logic to ensure AI works as expected.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+## 🙌 Let's Connect
+
+If you liked this project or have feedback, feel free to connect with me:
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/aravinth-dev/)
+
+---
+
+## © 2025 | Built with focus, logic, and continuous learning.
