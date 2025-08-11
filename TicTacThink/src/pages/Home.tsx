@@ -50,7 +50,7 @@ const Home = () => {
            const newArray = [...board]
            newArray[move]='O'
            setBoard(newArray)
-          console.log(move)
+          
           setIsplayerTurn(true)
         }
         aiTurn()

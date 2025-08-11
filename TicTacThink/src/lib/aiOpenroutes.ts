@@ -1,7 +1,5 @@
 
 export const getAiMove = async (board:(string | null)[], aiModel:string) => {
-  console.log(board, aiModel);
-  console.log(aiModel)
 
 const hardSystemPrompt = `
 You are an expert Tic-Tac-Toe AI Playing as "O.
@@ -47,7 +45,6 @@ what sis your move?.
     });
 
     const data = await response.json();
-    console.log(data)
     const responseText = data.choices?.[0]?.message?.content?.trim();
     const match = responseText.match(/\d+/)
     return match && parseInt(match[0],10)
