@@ -8,6 +8,7 @@ import { ResultModal } from "@/components/ResultModal"
 import {CheckWinner} from "@/lib/Winner"
 
 
+
 const Home = () => {
     //state for the 9 cell 
     const [board, setBoard] = useState<Array<string | null>>(Array(9).fill(null))
@@ -34,9 +35,9 @@ const Home = () => {
   if(result?.winner){
     setWinner(result.winner);
     setScore((prev) => ({
-      ...prev,
-      [result.winner]: prev[result.winner] + 1
-    }))
+  ...prev,
+  [result.winner as "X" | "O"]: prev[result.winner as "X" | "O"] + 1
+}));
   }
 }, [board]);
 
@@ -84,7 +85,7 @@ const Home = () => {
 
   return (
     <div className="w-full min-h-screen  bg-[#111827] flex items-center justify-center pb-20">
-      <div className="w-[80%] min-h-120 bg-[#0c111f] border border-[#1c2c44] rounded-xl max-lg:mt-20 max-lg:w-[90%] ">
+      <div className="w-[80%] min-h-120 bg-[#0c111f] border border-[#1c2c44] rounded-xl mt-20 max-lg:mt-20 max-lg:w-[90%] ">
         <h1 className="text-4xl text-[#22d3ee] font-bold mb-3 border-b-2 p-8 pb-4 border-[#1c2c44]">Tic Tac Think</h1>
 
         <div className="flex p-8 w-full max-lg:flex-col h-full gap-6">

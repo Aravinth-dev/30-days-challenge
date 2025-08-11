@@ -5,6 +5,14 @@ Enjoy a clean, responsive interface with a smooth and minimal design.
 
 ---
 
+
+
+## 📸 Preview
+> ![Tic Tac Think Screenshot](./public/Screenshot%202025-08-09%20154116.png)
+>🔗 Live Demo: https://notoon.netlify.app/
+---
+
+
 ## 🔍 Features  
 - 🎮 **Classic Gameplay** – Play on a 3x3 grid, just like the original.  
 - 🤖 **Smart AI Opponent** – Powered by the Minimax algorithm for unbeatable moves.  

@@ -50,7 +50,7 @@ what sis your move?.
     console.log(data)
     const responseText = data.choices?.[0]?.message?.content?.trim();
     const match = responseText.match(/\d+/)
-    return match?parseInt(match[0],10):null
+    return match && parseInt(match[0],10)
   } catch (err) {
     console.error(err);
     return null;
