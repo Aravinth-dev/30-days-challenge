@@ -45,7 +45,6 @@ const NoteList = () => {
       setEditNote(edit)
     }
 
-    console.log(note)
   return (
     <div>
       <Search 
