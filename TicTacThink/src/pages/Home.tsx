@@ -17,7 +17,7 @@ const Home = () => {
     const [isPlayerTurn,setIsplayerTurn] = useState<boolean>(true)
 
     //state for the who won {X,O,Draw}
-    const [winner,setWinner] = useState<any>(null)
+    const [winner,setWinner] = useState<any>(null) 
 
     //state for the Score of{X:0,O:0}
     const [score,setScore] = useState<{X:number,O:number}>({X:0,O:0})
