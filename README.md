@@ -35,7 +35,7 @@ Each folder contains:
 | 02  | Feel Note                  |  `useState`,`props handling` |
 | 03  | TimeFlow                   |  `Chart.js`,  `localStorage` |
 | 04  |  Notoon                    |  `Firebase Firestore`,  `Real-time data synchronization` |
-| 05  |  Tic Tac Think             |  `OpenRouter Api`, `game logic` `Prompt Engineering`|
+| 05  |  Tic Tac Think             |  `OpenRouter Api`, `game logic` ` Minimax algorithm`|
 
 *Full list in progress as I build each day!*
 
