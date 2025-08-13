@@ -11,8 +11,8 @@ interface GifItem {
     preview_webp?: {
       url?: string;
     };
-     original?: {
-      url: string;
+    original?: {
+      url?: string;
     };
   };
 }

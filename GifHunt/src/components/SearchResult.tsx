@@ -10,9 +10,9 @@ interface GifItem {
     preview_webp?: {
       url?: string;
     };
-    original:{
+    original?: {
       url?: string;
-    }
+    };
   };
 }
 interface Props {
