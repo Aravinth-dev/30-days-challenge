@@ -8,7 +8,7 @@ Built with **React (TypeScript)**, **Tailwind CSS**, and **shadcn/ui**, GIFHUNT 
 
 ## 📸 Preview
 > ![Feel Note Screenshot](./public/Screenshot%202025-08-13%20123824.png)
->🔗 Live Demo: https://notoon.netlify.app/
+>🔗 Live Demo: https://gifhunt.netlify.app/
 ---
 
 
