@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# GIFHUNT 🎯  
+**GIFs That Speak Louder Than Words**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GIFHUNT is a fun and interactive web application that lets you explore trending and searchable GIFs powered by the [GIPHY API](https://developers.giphy.com/).  
+Built with **React (TypeScript)**, **Tailwind CSS**, and **shadcn/ui**, GIFHUNT delivers a clean, responsive, and delightful browsing experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
+> ![Feel Note Screenshot](./public/Screenshot%202025-08-13%20123824.png)
+>🔗 Live Demo: https://notoon.netlify.app/
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
+- 🎬 **Browse Trending GIFs** – Stay up to date with what’s popular right now.
+- 🔍 **Search for Any GIF** – Find the perfect GIF for your mood or conversation.
+- ⚡ **Fast & Responsive UI** – Smooth browsing experience across devices.
+- 🎨 **Modern UI Components** – Styled with Tailwind CSS and shadcn/ui for consistency.
+- 📱 **Mobile Friendly** – Works seamlessly on phones, tablets, and desktops.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠 Tech Stack
+- **Frontend:** React (TypeScript) + Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** ShadCN UI
+- **GIF Data Provider:** GIPHY API
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+
+## 🚀 How to Run
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/Aravinth-dev/30-days-challenge.git
+cd GifHunt
+```
+2. **Install dependencies**
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Start the dev server**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+## 💡 What I Learned
+
+**TailwindCSS & shadcn/ui** – Improved skills in creating a responsive and modern UI using utility classes and reusable components.
+**Dynamic Layout Handling** – Gained experience in adapting the UI for images of varying dimensions to create a visually appealing layout (similar to Instagram Explore).
+**Component Reusability** – Structured components to make them reusable and maintainable for future feature expansion.
+**State Management** – Practiced managing loading states and conditional rendering for a smooth user experience.
+
+
+
+## 🙌 Let's Connect
+
+If you liked this project or have feedback, feel free to connect with me:
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/aravinth-dev/)
+
+---
+
+## © 2025 | Built with focus, logic, and continuous learning.
